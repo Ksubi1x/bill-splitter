@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    font-weight:700;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(185, 41%, 84%);
+}
+
+#title {
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+
+
+.main {
+    height: 100vh;
+    padding: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        
+}
+
+.bill {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.box {
+    background-color: hsl(189, 41%, 97%);
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+}
+
+.grid {
+    
+    display: grid;
+    grid-template-areas: 
+    "tip tip1"
+    "tip2 tip3"
+    "tip4 custom";
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+
+#custom {
+    grid-area: custom;
+    width: 100%;   
+    text-align: right;
+    height: 40px;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+
+}
+
+#custom::placeholder {
+    color: hsl(183, 100%, 15%);
+    padding: 0px 15px 0px 0px; 
+    font-size: large;
+}
+
+.grid button:hover {
+    
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+#tip {
+    
+    height: 40px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    grid-area: tip;
+}
+
+#tip1 {
+    grid-area: tip1;
+    height: 40px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+}
+#tip2 {
+    grid-area: tip2;
+    height: 40px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+}
+#tip3 {
+    grid-area: tip3;
+    height: 40px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+}
+#tip4 {
+    grid-area: tip4;
+    height: 40px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+
+
+.total {
+    background-color: hsl(183, 100%, 15%);
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+
+.fieldText {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+.display1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.display1 h3 {
+    color: hsl(172, 67%, 45%);
+}
+
+.display2 h3 {
+    color: hsl(172, 67%, 45%);
+}
+
+.display2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.result h5 {
+    color: white;
+}
+
+#grey {
+    color: hsl(184, 14%, 56%);
+}
+
+#reset {
+    width: 100%;
+    height: 30px;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+input {
+    width: 30%;
+    outline: none;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+}
+
+#dollar {
+    height: 15px;
+    align-items: center;
+}
+
+#person {
+    height: 15px;
+    align-self: center;
+}
+
+.attribution {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.attribution a {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 60%;
+        
+    }
+
+    .primary {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        height: 40vh;
+    }
+
+    .total {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    
+}
