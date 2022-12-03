@@ -1,4 +1,4 @@
-# bill-splitter
+#Bill Splitter
 
 Technologies used: 
 
